@@ -13,7 +13,6 @@ var port = process.env.PORT || 3000;
 
 /** this project needs a db !! **/
 // mongoose.connect(process.env.MONGOLAB_URI);
-process.env.MONGOLAB_URI='mongodb://airoose:database123@ds145113.mlab.com:45113/mydatabase';
 mongoose.connect(process.env.MONGOLAB_URI);
 app.use(cors());
 
